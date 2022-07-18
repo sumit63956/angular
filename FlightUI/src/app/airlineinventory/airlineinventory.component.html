@@ -1,0 +1,123 @@
+ 
+ 
+     <div class="row">
+        <div class="col-xl-9">
+            <div class="card border-0">
+                <div class="card-body">
+                    <h2>Add Airline</h2>
+                   
+                        <form>
+                        <div>
+                            <label class="form-label">Airline Fligh No</label>
+                            <input [(ngModel)]="AirlineInventoryModel.flighNo" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+                           
+                        </div>
+                        
+                        <div>
+                            <label class="form-label">Airline ID</label>
+                            <input [(ngModel)]="AirlineInventoryModel.airlineId" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+                            
+                        </div>
+                        <div>
+                            <label class="form-label">From Place</label>
+                            <input [(ngModel)]="AirlineInventoryModel.frmPlace" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+                        </div>
+                        <div>
+                            <label class="form-label">To Place</label>
+                            <input [(ngModel)]="AirlineInventoryModel.toPlace" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+                        </div>
+                        <div>
+                            <label class="form-label">Start date</label>
+                            <input [(ngModel)]="AirlineInventoryModel.strtDate" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+                        </div>
+                        
+                        <div>
+                            <label class="form-label">End Date</label>
+                            <input [(ngModel)]="AirlineInventoryModel.endDate" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+                        </div>
+
+                        <div>
+                            <label class="form-label">ScheduleID</label>
+                            <input [(ngModel)]="AirlineInventoryModel.scheduleId" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+                        </div>
+
+                        <div>
+                            <label class="form-label">Instrument</label>
+                            <input [(ngModel)]="AirlineInventoryModel.instrument" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+                        </div>
+                        <div>
+                            <label class="form-label">No Of Seats</label>
+                            <input [(ngModel)]="AirlineInventoryModel.noOfSeats" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+                        </div>
+                        <div>
+                            <label class="form-label">No od BC Seats</label>
+                            <input [(ngModel)]="AirlineInventoryModel.noOfBCSeats" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+                        </div>
+                        <div>
+                            <label class="form-label">No Of NBC Seats</label>
+                            <input [(ngModel)]="AirlineInventoryModel.noOfNBCSeats" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+                        </div>
+                        <div>
+                            <label class="form-label">Ticket Cost</label>
+                            <input [(ngModel)]="AirlineInventoryModel.ticketCost" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+                        </div>
+                        <div>
+                            <label class="form-label">No Of Rows</label>
+                            <input [(ngModel)]="AirlineInventoryModel.noOfRows" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+                        </div>
+                        <div>
+                            <label class="form-label">Meal</label>
+                            <input [(ngModel)]="AirlineInventoryModel.meal" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+                        </div>
+                        <div>
+                            <label class="form-label">trip</label>
+                            <input [(ngModel)]="AirlineInventoryModel.trip" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+                        </div>
+                        <div>
+                            <label class="form-label">To Place ID</label>
+                            <input [(ngModel)]="AirlineInventoryModel.toPlaceId" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+                        </div>
+                        <div>
+                            <label class="form-label">From Place Id</label>
+                            <input [(ngModel)]="AirlineInventoryModel.fromPlaceId" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+                        </div>
+                      
+                        <div class="py-4">
+                            <input type="submit"  class="btn btn-primary" value="Add Airline Inventory" (click)="AddAirlineInventory()" />
+                           
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- <table class="table caption-top">
+        <caption>List of Airline</caption>
+        <thead class="table-light">
+    
+            <td>Airline Name</td>
+            <td>Airline Logo</td>
+            <td>Airline Contactno</td>
+            <td>Airline Address</td>
+            <td>Airline Availability</td>
+        </thead>
+        <tr *ngFor="let air of AirlineModels">
+            <td>{{air.name}}</td>
+            <td>{{air.updateLogo}}</td>
+            <td>{{air.contactNumber}}</td>
+            <td>{{air.contactAdd}}</td>
+            <td>{{air.available}}</td>
+             <td>
+               
+    
+    
+                 <button type="button" (click)="BlockAirline(air)" class="btn btn-outline-primary"
+                    style="margin:10px">Block Airline</button> 
+                
+            </td> 
+        </tr>
+    </table>
+     -->
+   

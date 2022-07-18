@@ -1,0 +1,65 @@
+ 
+    
+     <div class="row">
+        <div class="col-xl-9">
+            <div class="card border-0">
+                <div class="card-body">
+                    <h2>Search</h2>
+                  
+                        <form>
+                        <div>
+                            <!-- <label class="form-label">Search By PNR</label> -->
+                            <input [(ngModel)]="SearchModel.pnrno" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+                         
+                        </div>
+                        <div class="py-4">
+                            <input type="submit"  class="btn btn-primary" value="Search By PNR" (click)="Searchbypnr()" />
+                            
+                        </div>
+                        <div>
+                            <!-- <label class="form-label">Search By Email</label> -->
+                            <input [(ngModel)]="SearchModel.emailId" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+                         
+                        </div>
+                        <div class="py-4">
+                            <input type="submit"  class="btn btn-primary" value="Search By Email" (click)="Searchbyemail()" />
+                            
+                        </div>
+                        
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+ <table class="table caption-top">
+
+    <caption>List of Booked Tickets</caption>
+        <thead class="table-light">
+    
+            <!-- <td>Name</td> -->
+            <td>Email Id</td>
+            <td>Gender</td>
+            <td>Age</td>
+            <td>Meal</td>
+            <td>SeatNo</td>
+            <td>PNRNo</td>
+        </thead>
+        <tr *ngFor="let search of SearchModels">
+            <!-- <td>{{search.name}}</td> -->
+            <td>{{search.emailId}}</td>
+            <td>{{search.gender}}</td>
+            <td>{{search.age}}</td>
+            <td>{{search.meal}}</td>
+            <td>{{search.seatNo}}</td>
+            <td>{{search.pnrno}}</td> 
+           
+        </tr>
+    </table>
+    
+    <!-- 
+    {{CustomerModel.customerName}}
+    {{CustomerModel.customerAmount}}
+    {{CustomerModel.customerCode}} -->  
